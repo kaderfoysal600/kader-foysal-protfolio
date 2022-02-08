@@ -13,7 +13,7 @@ const ProjectSectionStyle = styled.div`
   padding: 10rem 0;
   .projects__allItems {
     display: flex;
-    gap: 3rem;
+    gap: 2rem;
     margin-top: 5rem;
   }
   .swiper-container {
@@ -84,6 +84,7 @@ export default function ProjectSection() {
                     title={project.name}
                     img={project.img}
                     desc={project.desc}
+                    link={project.link}
                   />
                 </SwiperSlide>
               );

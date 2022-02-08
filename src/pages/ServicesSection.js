@@ -1,5 +1,5 @@
 import React from 'react';
-import { MdCode, MdDesktopWindows, MdPhonelinkSetup } from 'react-icons/md';
+import { MdCode } from 'react-icons/md';
 import styled from 'styled-components';
 import SectionTitle from '../components/SectionTitle';
 import ServicesSectionItem from '../components/ServicesSectionItem';
@@ -8,7 +8,7 @@ const ServicesItemStyles = styled.div`
   padding: 10rem auto;
   .services__allItem {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin-top: 5rem;
     gap: 10rem;
   }
@@ -29,19 +29,9 @@ export default function ServicesSection() {
         <SectionTitle heading="Services" subheading="what I will do for you" />
         <div className="services__allItem">
           <ServicesSectionItem
-            icon={<MdDesktopWindows />}
-            title="Web Design"
-            description="I do UI UX Design to help developers to make amazing website"
-          />
-          <ServicesSectionItem
             icon={<MdCode />}
             title="Web Development"
             description="I do Frontend Development with React-JS and make Amazing web experience"
-          />
-          <ServicesSectionItem
-            icon={<MdPhonelinkSetup />}
-            title="App Development"
-            description="I do App Development with React-Native and make Amazing Application experience"
           />
         </div>
       </div>

@@ -1,12 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
-import ContactBanner from './ContactBanner';
 import PText from './PText';
 import Button from './Button';
-import AboutImg from '../assets/images/about-page-img.png';
+import AboutImg from '../assets/images/hero.png';
 import AboutInfoItem from './AboutInfoItem';
 
 const AboutPageStyle = styled.div`
+  width: 100%;
   padding: 20rem 0 10rem 0;
   .top-section {
     display: flex;
@@ -56,6 +56,7 @@ const AboutPageStyle = styled.div`
     text-transform: uppercase;
   }
   @media only screen and (max-width: 768px) {
+    width: 100%;
     padding: 10rem 0;
     .about__info__heading {
       font-size: 3rem;
@@ -84,18 +85,15 @@ export default function AboutSection() {
             <h2 className="about__heading">Frontend Developer </h2>
             <div className="about__info">
               <PText>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Aliquam, voluptates. Lorem ipsum dolor sit amen. adipisicing
-                elit. Vel ex blanditiis numquam repellat,
-                <br /> <br />
-                minima id fugit dolore voluptatibus voluptate non, aperiam
-                accusamus possimus esse enim similique, est necessitatibus vitae
-                officiis?
-                <br /> <br />
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Assumenda ipsam eligendi error enim sapiente itaque temporibus
-                quisquam obcaecati pariatur commodi? Fuga iste rerum ea neque
-                quisquam fugiat ullam laboriosam sit.
+                I am a highly enthusiastic Frontend developer with 1 years of
+                experience. I have strong desire for knowledge and challenges.
+                <br />
+                <br />I always curious about the latest technology and updates
+                in the web development field. I consider that nothing is
+                impossible ,there are ways that leads to everything. <br />{' '}
+                <br />
+                Now I am looking for an opportunity to apply my skills and
+                contribute to the growth of the company.
               </PText>
             </div>
             <Button btnText="Download CV" btnLink="#" />
@@ -127,7 +125,6 @@ export default function AboutSection() {
           </div>
         </div>
       </div>
-      <ContactBanner />
     </AboutPageStyle>
   );
 }

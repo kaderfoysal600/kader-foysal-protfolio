@@ -6,13 +6,16 @@ import projectImg from '../assets/images/projectImg.png';
 const ProjectItemStyles = styled.div`
   .projectItem__img {
     width: 100%;
-    height: 400px;
+    object-fit: cover;
+    height: 20vw;
     border-radius: 12px;
     overflow: hidden;
     display: inline-block;
     border: 3px solid var(--gray-2);
     img {
+      width: 100%;
       height: 100%;
+      object-fit: cover;
     }
   }
   .projectItem__info {
@@ -31,7 +34,7 @@ const ProjectItemStyles = styled.div`
   }
   @media only screen and (max-width: 768px) {
     .projectItem__img {
-      height: 350px;
+      height: 50vw;
     }
   }
 `;
@@ -39,12 +42,18 @@ export default function ProjectItem({
   title = 'Project name',
   img = projectImg,
   desc = ' Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam, id?',
+  link = 'www.facebook.com',
 }) {
   return (
     <ProjectItemStyles>
-      <Link to="projects" className="projectItem__img">
+      <a
+        href={link}
+        target="_blank"
+        rel="noreferrer"
+        className="projectItem__img"
+      >
         <img src={img} alt="project img" />
-      </Link>
+      </a>
 
       <div className="projectItem__info">
         <Link to="#">

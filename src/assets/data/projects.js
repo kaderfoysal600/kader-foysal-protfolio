@@ -1,45 +1,41 @@
 import { v4 as uuidv4 } from 'uuid';
-import ProjectImg from '../images/projectImg.png';
-import UTrackerImg from '../images/utracker.jpg';
-import GreenCtgImg from '../images/greenctg.jpg';
-import CoinTrackerImg from '../images/cointracker.jpg';
-import CavinImg from '../images/cavinimg.jpg';
+import SpaceShareImg from '../images/space-share.png';
+import CurdImg from '../images/curd.png';
+import GuessingGame from '../images/guessing-game.png';
+import PortfolioImg from '../images/portfolio.png';
 
 const projects = [
   {
     id: uuidv4(),
-    name: 'U Tracker',
+    name: 'Portfolio Website',
     desc:
-      'An application to track your all data from one place. I developed the website and the mobile app',
-    img: UTrackerImg,
+      'A portfolio for Kader Foysal. A Frontend developer from Dhaka Bangladesh. The portfolio is made using ReactJs.',
+    img: PortfolioImg,
+    link: 'https://kaderfoysal.netlify.app/',
   },
   {
     id: uuidv4(),
-    name: 'Green CTG',
+    name: 'Space Share',
     desc:
-      'An app to help people to get an overview of how they can make the city beautiful.',
-    img: GreenCtgImg,
+      'An application to find nearby space for leaving , coworking or office. I developed the website',
+    img: SpaceShareImg,
+    link: 'https://space-share-f35ec.web.app/',
   },
   {
     id: uuidv4(),
-    name: 'Coin Tracker',
+    name: 'Javascript Curd',
     desc:
-      'Using this app you can track any e coin. Also you will get a good advise about investment form the professional',
-    img: CoinTrackerImg,
+      'An app to made with pure javascript.Which contains create read delete and update functionality',
+    img: CurdImg,
+    link: 'https://kaderfoysal600.github.io/javascript-curd/',
   },
   {
     id: uuidv4(),
-    name: "Cavin's Portfolio",
+    name: '"Guess the number" - Game',
     desc:
-      'A portfolio for Cavin jr. A artist from New york city. The portfolio is made using ReactJs and GatsbyJs.',
-    img: CavinImg,
-  },
-  {
-    id: uuidv4(),
-    name: 'Tracking Soft',
-    desc:
-      'A tracking website that will show the performance of the website. Also you will get some useful advice to improve the performance.',
-    img: ProjectImg,
+      'This project is made with pure javascript. Which contains create read delete and update functionality ',
+    img: GuessingGame,
+    link: 'https://kaderfoysal600.github.io/random-project/',
   },
 ];
 
