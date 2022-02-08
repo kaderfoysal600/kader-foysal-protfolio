@@ -72,6 +72,14 @@ const AboutPageStyle = styled.div`
       font-size: 2.8rem;
     }
   }
+  .button {
+    font-size: 2.2rem;
+    background-color: var(--gray-1);
+    padding: 0.7em 2em;
+    border-radius: 8px;
+    border: 2px solid var(--gray-1);
+    color: black;
+  }
 `;
 export default function AboutSection() {
   return (
@@ -95,8 +103,16 @@ export default function AboutSection() {
                 Now I am looking for an opportunity to apply my skills and
                 contribute to the growth of the company.
               </PText>
-            </div>
-            <Button btnText="Download CV" btnLink="#" />
+            </div>{' '}
+            <a
+              className="button"
+              href="https://drive.google.com/file/d/1jvaNaUsZkWaC88anBOQP657HIVzJ_GDy/view?usp=sharing"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {' '}
+              Download CV
+            </a>
           </div>
           <div className="Right">
             <img src={AboutImg} alt="Pic of Kader Foysal" />
